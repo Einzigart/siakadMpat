@@ -19,7 +19,7 @@
           <label for ="copassword">Co-Password</label>
           <input type="password" name ="copassword" required>
           <a href="./">Sudah punya akun?</a>
-          <button type="submit" name ="register"> Daftar</button>
+          <button type="submit" name ="register">Sign Up</button>
      </form>
 
 
