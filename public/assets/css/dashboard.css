@@ -1,0 +1,208 @@
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+a{
+     text-decoration: none;
+     font-style: none;
+     color:var(--white);
+}
+
+:root{
+     --white :#fffefb;
+     --white-bg:#f4f4f4;
+     --black : #25282a;
+     --gray : rgb(185, 185, 185);
+     --blue :#007bff;
+     --blue-light : #4994e6;
+
+     font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+     width:100%;
+     height: 100vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+
+}
+
+nav{
+     padding-top:20px;
+     width:15%;
+     height: 100%;
+     display: flex;
+     flex-direction: column;
+     /* justify-content: space-between; */
+     gap:5vh;
+     align-items: center; 
+     background-color: var(--blue);
+}
+
+nav .foot{
+     border-top: 2px solid var(--white);
+     color : var(--white);
+     width:100%;
+     height:50px;
+     padding:10px 20px 10px 20px;
+     font-size: 1rem;
+}
+nav .foot a:hover{
+     color: var(--blue-light);
+}
+
+nav .userInfo{
+     padding:5px;
+     display:flex;
+     justify-content: space-evenly;
+     align-items: center;
+     text-align: center;
+     flex-wrap: wrap;
+}
+nav .userInfo >h3{
+     padding-top: 11px;
+}
+
+main{
+     padding:10px 20px 10px 20px;
+     background-color:var(--white-bg);
+     width:85%;
+     height: 100%;
+     overflow-y: scroll;
+}
+nav .menu{
+     width:100%;
+}
+
+nav h3{
+     background-color: none;
+     color:var(--white);
+     width:100%;
+     height:40px;
+     padding:5px 10px 5px 20px;
+     font-size: 14px;
+}
+nav h3:hover{
+     cursor: pointer;
+     opacity: .9;
+     background-color: var(--blue-light);
+}
+
+table {
+     font-family: arial, sans-serif;
+     border-collapse: collapse;
+     width: 100%;
+     margin-top: 20px;
+   }
+   
+   td, th {
+     border: 1px solid #dddddd;
+     text-align: center;
+     padding: 8px;
+   }
+   
+   tr:nth-child(even) {
+     background-color: #dddddd;
+   }
+
+main .ambil-mk{
+     display: flex;
+     flex-direction: column;
+     border: 2px solid var(--black);
+     border-radius: 10px;
+     padding:20px;
+}
+main .form-admin{
+     display: flex;
+     flex-direction: column;
+     border: 2px solid var(--black);
+     border-radius: 10px;
+     padding:20px;
+}
+
+main .ambil-mk select{
+     height: 30px;
+     padding : 5px 20px 5px 20px;
+}
+main .form-admin input{
+     height: 30px;
+     padding : 5px 20px 5px 20px;
+}
+
+main .form-admin select{
+     height: 30px;
+     padding : 5px 20px 5px 20px;
+}
+main .ambil-mk > button{
+     margin-top:20px;
+     height:30px;
+}
+
+main .ambil-mk > button:hover{
+     cursor: pointer;
+     opacity: .7;
+}
+main .form-admin > button{
+     margin-top:20px;
+     height:30px;
+}
+
+main .form-admin > button:hover{
+     cursor: pointer;
+     opacity: .7;
+}
+
+.btn_show_container{
+     display:flex;
+     justify-content: end;
+     
+}
+
+.btn_show{
+     margin-top:10px;
+     padding:10px 20px 10px 20px;
+     margin-bottom: 10px;
+}
+.btn_show:hover{
+     cursor: pointer;
+     opacity: .7;
+}
+
+.hidden {
+     display: none !important;
+     overflow: hidden;
+}
+
+main .dashboard{
+     width:100%;
+     height:100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+}
+
+button:hover{
+     cursor: pointer;
+}
+
+main table a{
+     color: var(--black);
+     border-radius: 5px;
+     padding:2px 5px 2px 5px;
+}
+main table a:hover{
+     opacity: .5;
+}
+
+.delete{
+     color:red;
+     border: 1px solid red;
+}
+.edit{
+     color:green;
+     border: 1px solid green;
+}
