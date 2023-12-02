@@ -206,3 +206,20 @@ main table a:hover{
      color:green;
      border: 1px solid green;
 }
+
+.alert{
+     width:100%;
+     height: max-content;
+     padding: 20px;
+     color:white;
+}
+
+.alert-success{
+     background-color: rgb(104, 196, 104);
+     border: 3px solid rgb(57, 187, 57);
+}
+
+.alert-failed{
+     background-color: rgb(194, 67, 67);
+     border: 3px solid rgb(230, 43, 43);
+}

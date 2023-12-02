@@ -9,7 +9,7 @@
 </head>
 
 <body>
-     <form action="" method="POST">
+     <form action={{ url('/register') }} method="POST">
           <label for ="nim"> NIM</label>
           <input type="text" name ="nim" required>
           <label for ="username"> Username</label>
@@ -18,7 +18,7 @@
           <input type="password" name ="password" required>
           <label for ="copassword">Co-Password</label>
           <input type="password" name ="copassword" required>
-          <a href="./">Sudah punya akun?</a>
+          <a href="../">Sudah punya akun?</a>
           <button type="submit" name ="register"> Daftar</button>
      </form>
 

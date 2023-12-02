@@ -9,12 +9,12 @@
 </head>
 
 <body>
-     <form action="{{ url('/login') }}" method="POST">
+     <form action="{{ url('/site') }}" method="POST">
           @csrf 
           <h2>Login</h2>
           <input type="text" name ="username" required placeholder="Username">
           <input type="password" name ="password" required placeholder="Password">
-          <a href="./register">Buat akun baru</a>
+          <a href="../register">Buat akun baru</a>
           <button type="submit" name ="login"> Login</button>
      </form>
 
