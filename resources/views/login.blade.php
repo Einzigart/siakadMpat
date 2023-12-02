@@ -11,11 +11,11 @@
 <body>
      <form action="{{ url('/login') }}" method="POST">
           @csrf 
-          <h2>Login</h2>
+          <h2>Sign In</h2>
           <input type="text" name ="username" required placeholder="Username">
           <input type="password" name ="password" required placeholder="Password">
           <a href="./register">Buat akun baru</a>
-          <button type="submit" name ="login"> Login</button>
+          <button type="submit" name ="login">Sign In</button>
      </form>
 
 </body>
