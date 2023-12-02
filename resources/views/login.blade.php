@@ -14,13 +14,8 @@
           <h2>Sign In</h2>
           <input type="text" name ="username" required placeholder="Username">
           <input type="password" name ="password" required placeholder="Password">
-<<<<<<< HEAD
           <a href="../register">Buat akun baru</a>
           <button type="submit" name ="login"> Login</button>
-=======
-          <a href="./register">Buat akun baru</a>
-          <button type="submit" name ="login">Sign In</button>
->>>>>>> c566bfef3212fac7b1a5bc942479230c82840256
      </form>
 
 </body>
