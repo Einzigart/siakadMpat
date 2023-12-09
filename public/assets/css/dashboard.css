@@ -223,3 +223,18 @@ main table a:hover{
      background-color: rgb(194, 67, 67);
      border: 3px solid rgb(230, 43, 43);
 }
+
+.container-print{
+     display:flex;
+     padding: 10px;
+     justify-content: end;
+}
+
+.print-btn{
+    top: 20px;
+     padding: 10px 30px 10px 30px;
+     color: var(--white);
+     font-weight: bold;
+     background-color: var(--blue);
+     border-radius: 5px;
+}
