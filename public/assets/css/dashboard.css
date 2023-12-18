@@ -36,7 +36,6 @@ nav{
      height: 100%;
      display: flex;
      flex-direction: column;
-     /* justify-content: space-between; */
      gap:5vh;
      align-items: center; 
      background-color: var(--blue);
@@ -61,13 +60,17 @@ nav .foot{
      border-top: 2px solid var(--white);
      color : var(--white);
      width:100%;
-     height:50px;
-     padding:10px 20px 10px 20px;
+     height:auto;
+     padding:10px 20px;
      font-size: 1rem;
      margin-top: auto; 
+     display: flex;
+     justify-content: space-between;
 }
 nav .foot a{
      margin-left: auto;
+     display: flex;
+     align-items: center;
 }
 
 nav .foot img {
@@ -80,16 +83,16 @@ nav .foot img {
      background-color: var(--blue-light);
 }
 
-nav .userInfo{
-     padding:5px;
-     display:flex;
-     justify-content: space-evenly;
+nav .foot .userInfo{
+     display: flex;
      align-items: center;
-     text-align: center;
-     flex-wrap: wrap;
 }
-nav .userInfo >h3{
-     padding-top: 11px;
+
+nav .foot img {
+     margin-right: 5px;
+}
+nav .foot h3 {
+     margin: 0;
 }
 
 main{
@@ -100,7 +103,6 @@ main{
      overflow-y: scroll;
 }
 nav .menu{
-     width:100%;
      width: 100%;
      display: flex;
      flex-direction: column;
@@ -121,7 +123,7 @@ nav h3{
      padding:5px 10px 5px 20px;
      font-size: 14px;
 }
-nav h3:hover{
+nav .menu h3:hover{
      cursor: pointer;
      opacity: .9;
      background-color: var(--blue-light);
@@ -144,20 +146,28 @@ nav h3:hover{
  }
 
 table {
-     font-family: arial, sans-serif;
      border-collapse: collapse;
+     margin: 25px 0;
+     font-size: 0.9em;
+     font-family: Arial, sans-serif;
      width: 100%;
-     margin-top: 20px;
+     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
    }
+   thead tr,
+     table th {
+     background-color: var(--white-bg); /* Adjust color as needed */
+     color: var(--black);
+     text-align: left;
+     }
    
    td, th {
+     padding: 12px 15px;
      border: 1px solid #dddddd;
-     text-align: center;
-     padding: 8px;
    }
    
-   tr:nth-child(even) {
-     background-color: #dddddd;
+   tr:nth-child(even),
+   table tr:nth-child(even) {
+     background-color: #f2f2f2;
    }
 
 main .ambil-mk{
