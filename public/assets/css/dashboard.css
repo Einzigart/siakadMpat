@@ -32,49 +32,87 @@ body{
 
 nav{
      padding-top:20px;
-     width:15%;
+     width:17.5%;
      height: 100%;
      display: flex;
      flex-direction: column;
-     /* justify-content: space-between; */
      gap:5vh;
      align-items: center; 
      background-color: var(--blue);
 }
 
+nav .header {
+     display: flex;
+     align-items: center;
+     padding: 10px;
+     background-color: var(--blue);
+ }
+ 
+ nav .header img {
+     margin-left: 10px;
+ }
+ 
+ nav .header h3 {
+     color: var(--white);
+ }
+ 
 nav .foot{
      border-top: 2px solid var(--white);
      color : var(--white);
      width:100%;
-     height:50px;
-     padding:10px 20px 10px 20px;
+     height:auto;
+     padding:10px 20px;
      font-size: 1rem;
+     margin-top: auto; 
+     display: flex;
+     justify-content: space-between;
 }
-nav .foot a:hover{
-     color: var(--blue-light);
+nav .foot a{
+     margin-left: auto;
+     display: flex;
+     align-items: center;
 }
 
-nav .userInfo{
-     padding:5px;
-     display:flex;
-     justify-content: space-evenly;
-     align-items: center;
-     text-align: center;
-     flex-wrap: wrap;
+nav .foot img {
+     cursor: pointer;
+     vertical-align: middle; /* Align the icon vertically in the middle */
+ }
+
+ nav .foot img:hover{
+     opacity: .9;
+     background-color: var(--blue-light);
 }
-nav .userInfo >h3{
-     padding-top: 11px;
+
+nav .foot .userInfo{
+     display: flex;
+     align-items: center;
+}
+
+nav .foot img {
+     margin-right: 5px;
+}
+nav .foot h3 {
+     margin: 0;
 }
 
 main{
-     padding:10px 20px 10px 20px;
+     padding:30px 20px 10px 20px;
      background-color:var(--white-bg);
      width:85%;
      height: 100%;
      overflow-y: scroll;
 }
 nav .menu{
-     width:100%;
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+}
+
+nav .menu h3 {
+     display: flex;
+     align-items: center;
+     justify-content: left;
+     height: 40px; /* Adjust the height as needed */
 }
 
 nav h3{
@@ -85,27 +123,51 @@ nav h3{
      padding:5px 10px 5px 20px;
      font-size: 14px;
 }
-nav h3:hover{
+nav .menu h3:hover{
      cursor: pointer;
      opacity: .9;
      background-color: var(--blue-light);
 }
 
+@media (max-width: 768px) {
+     nav .header {
+         flex-direction: column;
+         align-items: center;
+     }
+ 
+     nav .header img {
+         margin-bottom: 10px;
+     }
+ 
+     nav .foot img {
+         width: 30px;
+         height: 30px;
+     }
+ }
+
 table {
-     font-family: arial, sans-serif;
      border-collapse: collapse;
+     margin: 25px 0;
+     font-size: 0.9em;
+     font-family: Arial, sans-serif;
      width: 100%;
-     margin-top: 20px;
+     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
    }
+   thead tr,
+     table th {
+     background-color: var(--white-bg); /* Adjust color as needed */
+     color: var(--black);
+     text-align: left;
+     }
    
    td, th {
+     padding: 12px 15px;
      border: 1px solid #dddddd;
-     text-align: center;
-     padding: 8px;
    }
    
-   tr:nth-child(even) {
-     background-color: #dddddd;
+   tr:nth-child(even),
+   table tr:nth-child(even) {
+     background-color: #f2f2f2;
    }
 
 main .ambil-mk{
