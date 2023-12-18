@@ -54,7 +54,7 @@
                </div>
           @endif
           <div class="btn_show_container">
-               <button class="btn_show" onclick="show()">Ambil Mata Kuliah</button>
+               <button class="btn_show print-btn" onclick="show()">Ambil Mata Kuliah</button>
           </div>
           <form class="ambil-mk hidden" id="ambil_mk" action="{{url('site/ambil-mk')}}" method="POST" >
                @csrf
@@ -64,7 +64,7 @@
                     <option value={{ $mkt ->kode_mk }}> {{ $mkt ->nama_mk }}</option>
                     @endforeach
                </select>
-               <button type="submit"name="tambah-mk">Ambil</button>
+               <button type="submit"name="tambah-mk" class="print-btn">Ambil</button>
           </form>
 
           <table>

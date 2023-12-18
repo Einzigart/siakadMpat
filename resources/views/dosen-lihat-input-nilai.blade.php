@@ -100,7 +100,7 @@
                         </td>
                     </tr>
                 @endforeach
-                <button type="submit" class="btn_show" name="simpan-nilai">Simpan</button>
+                <button type="submit" class="btn_show print-btn" name="simpan-nilai">Simpan</button>
             </form>
         </table>
     </main>

@@ -86,7 +86,7 @@
         @endif
         @if (session('role_id') == 1)
             <div class="btn_show_container">
-                <button class="btn_show" onclick="show()">Tambah MK</button>
+                <button class="btn_show print-btn" onclick="show()">Tambah MK</button>
             </div>
             <form class="form-admin hidden" id="form-tambah-mk" action="{{url('site/daftar-mk-tayang/tambah')}}" method="POST">
                 @csrf
@@ -100,7 +100,7 @@
                     <option value= {{ $dsn->nip }}>{{ $dsn->nama }} ( {{ $dsn->nip }} )</option>
                     @endforeach
                 </select>
-                <button type="submit"name="tambah-mk">Simpan</button>
+                <button type="submit"name="tambah-mk" class="print-btn">Simpan</button>
             </form>
         @endif
 

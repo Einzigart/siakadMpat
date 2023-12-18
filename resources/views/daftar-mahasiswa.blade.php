@@ -84,7 +84,7 @@
         @endif
         @if (session('role_id') == 1)
             <div class="btn_show_container">
-                <button class="btn_show" onclick="show()">Tambah Mahasiswa</button>
+                <button class="btn_show print-btn" onclick="show()">Tambah Mahasiswa</button>
             </div>
             <form class="form-admin hidden " id="form-tambah-mahasiswa" action="{{url('site/daftar-mahasiswa/tambah')}}" method="POST">
                 @csrf
@@ -92,7 +92,7 @@
                 <input type="text" name="nim" required />
                 <label for="nama">Nama</label>
                 <input type="text" name="nama" required />
-                <button type="submit"name="tambah-mahasiswa">Tambah</button>
+                <button type="submit"name="tambah-mahasiswa" class="print-btn">Tambah</button>
             </form>
         @endif
         <table>

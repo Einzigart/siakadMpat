@@ -90,7 +90,7 @@
                     <option value={{ $dsn->nip }}>{{ $dsn->nama }} ( {{ $dsn->nip }} )</option>
                 @endforeach
             </select>
-            <button type="submit"name="edit-mk">Simpan</button>
+            <button type="submit"name="edit-mk" class="print-btn">Simpan</button>
         </form>
 
     </main>

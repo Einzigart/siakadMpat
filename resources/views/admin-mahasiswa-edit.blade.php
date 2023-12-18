@@ -86,7 +86,7 @@
             <input type="text" name="nim" required disabled value={{ $nim }} />
             <label for="nama">Nama</label>
             <input type="text" name="nama" required value={{ $nama }} />
-            <button type="submit"name="edit-mahasiswa">Simpan</button>
+            <button type="submit"name="edit-mahasiswa" class="print-btn">Simpan</button>
         </form>
 
     </main>
